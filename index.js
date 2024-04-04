@@ -16,8 +16,8 @@ app.use(express.urlencoded({ extended: false}))
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send("Mern Task Manager..");
-    //res.json({message: `Connected to server 👍`});
+    res.send("Mern Task Manager API working...");
+    res.json({message: `Connected to server 👍`});
 })
 
 app.use('/auth', authRouter);
@@ -40,19 +40,3 @@ const start = async () => {
     }
 }
 start()
-
-
-
-/* 
- import express from 'express';
-
-const app = express();
-
-app.get('/', (req, res) => {
-    res.send('Hello World');
-})
-
-
-app.listen(8000, ()=> {
-    console.log('app is running on port 8000')
-})  */
