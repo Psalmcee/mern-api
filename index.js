@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false}))
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send("Mern Task Manager API working...");
+    //res.send("Mern Task Manager API working...");
     res.json({message: `Connected to server 👍`});
 })
 
