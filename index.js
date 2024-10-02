@@ -1,6 +1,6 @@
 import express from 'express';
 const app = express();
-const cors = cors();
+import cors from 'cors';
 import connectDB from "./db/connect.js";
 import authRouter from './routes/auth.js';
 import taskRouter from './routes/tasks.js';
